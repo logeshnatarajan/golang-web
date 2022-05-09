@@ -14,7 +14,7 @@ func (m hotdog) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	var d hotdog
-	http.ListenAndServe(":8080", d)
+	var typehotdog hotdog
+	http.ListenAndServe(":8080", typehotdog)
 
 }
