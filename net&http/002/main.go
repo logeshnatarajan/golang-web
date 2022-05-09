@@ -6,7 +6,7 @@ import (
 )
 
 type hotdog int
-
+// type hotdog is a method of this function
 func (m hotdog) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("logesh", "podu podu varuthu")
 	w.Header().Set("logesh", "enna da varuthuuuu")
