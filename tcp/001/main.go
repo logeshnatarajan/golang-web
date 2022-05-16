@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-
+	// very interesting topic deep level understanding of internal communication 
 	li, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatalln(err)
