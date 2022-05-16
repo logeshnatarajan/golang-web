@@ -27,6 +27,7 @@ func main() {
 func handle(conn net.Conn) {
 
 	scanner := bufio.NewScanner(conn)
+	// It will keep on listening untill the network manually breaks
 	for scanner.Scan() {
 		ln := scanner.Text()
 		fmt.Println(ln)
